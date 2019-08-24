@@ -1,0 +1,301 @@
+body{
+    font-family: 'Nanum Gothic', sans-serif;
+    
+}
+
+/* preload */
+
+#loading{
+	background-color: yellowgreen;
+	height: 100%;
+	width: 100%;
+	position: fixed;
+	z-index: 1000;
+	margin-top: 0px;
+	top: 0px;
+}
+#loading-center{
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+#loading-center-absolute {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	height: 200px;
+	width: 200px;
+	margin-top: -100px;
+	margin-left: -100px;
+}
+#object{
+	width: 80px;
+	height: 80px;
+	background-color: #FFF;
+	-webkit-animation: animate 1s infinite ease-in-out;
+	animation: animate 1s infinite ease-in-out;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 60px;
+}
+@-webkit-keyframes animate {
+  0% { -webkit-transform: perspective(160px); }
+  50% { -webkit-transform: perspective(160px) rotateY(-180deg); }
+  100% { -webkit-transform: perspective(160px) rotateY(-180deg) rotateX(-180deg); }
+}
+
+@keyframes animate {
+  0% { 
+    transform: perspective(160px) rotateX(0deg) rotateY(0deg);
+    -webkit-transform: perspective(160px) rotateX(0deg) rotateY(0deg); 
+  } 50% { 
+    transform: perspective(160px) rotateX(-180deg) rotateY(0deg);
+    -webkit-transform: perspective(160px) rotateX(-180deg) rotateY(0deg) ;
+  } 100% { 
+    transform: perspective(160px) rotateX(-180deg) rotateY(-180deg);
+    -webkit-transform: perspective(160px) rotateX(-180deg) rotateY(-180deg);
+  }
+}
+
+.shape{
+    clip-path: polygon(50% 0%, 100% 0, 100% 75%, 50% 100%, 0% 75%, 0 0);
+    background-image: linear-gradient(rgba(0,0,0,0.5) , rgba(0,0,0,0.5)) ,url("/Photo/background.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    background-attachment: fixed;
+    height: 800px;
+}
+
+.navbar{
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+}
+
+.bg-light {
+    background: transparent !important;
+}
+
+.bg-light.scrolled {
+    background: #fff !important;
+    transition-duration: 0.5s;
+    color: #000 !important;
+    box-shadow: 1px 1px 10px 1px #aaa;
+}
+
+.navbar-brand.scrolled{
+    color: #000 !important
+}
+
+ .navbar-nav{
+    margin:auto; 
+}
+
+.nav-item {
+    margin: 10px;
+    
+}
+
+
+.nav-link {
+color: #fff !important;   
+font-weight: bold; 
+}
+
+.nav-link.scrolled {
+    color: #000 !important;
+}
+
+.shape .header_info{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-align: center;
+}
+
+.shape .header_info h1{
+    font-weight: bold;
+    font-size: 60px;
+    color: yellowgreen;
+    text-shadow: 1px 2px 500px  rgba(248, 246, 246, 0.5);
+}
+
+.shape .header_info p{
+    font-family: 'Fredoka One', cursive;
+    letter-spacing: .3em;
+    font-size: 18px;
+}
+
+.about{
+    background-color: #eee;
+    position: relative;
+    top: 50px;
+    padding: 25px;
+}
+
+.about .about_info{
+    margin: auto;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.about .about_info h1{
+    font-weight: bold;
+}
+
+.about .about_info p{
+    font-weight: bold;
+    line-height: 2em;
+}
+
+.about .about_info button{
+    font-weight: bold;
+    cursor: pointer;
+    background-color: yellowgreen;
+    border: 1px solid yellowgreen;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.Work{
+    position: relative;
+    top: 200px;
+}
+
+.Work h1{
+    text-align: center;
+    font-weight: bold;
+}
+
+.uk-position-relative img{
+    width: 250px;
+    max-height: 600px;
+    display: block;
+    margin: auto;
+    border: 2px solid dodgerblue;
+    padding: 10px;}
+
+    .uk-position-relative li{
+        width: 300px;
+        padding: 10px;
+    }
+
+.contact{
+    position: relative;
+    top: 350px;
+}
+
+.contact_shape{
+    clip-path: polygon(50% 0%, 100% 25%, 100% 100%, 50% 100%, 0 100%, 0% 25%);
+    height: 700px;
+    background-image: linear-gradient(rgba(0,0,0,0.5) , rgba(0,0,0,0.5)) ,url("/Photo/background.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.form{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-align: center;
+    box-shadow: 1px 1px 10px 1px rgba(0,0,0,0.5);
+    padding: 20px;
+    width: 50%;
+    background-color: rgba(0,0,0,0.5)
+}
+.form h1{
+    color: #fff;
+}
+
+form{
+    width: 90%;
+    margin: auto;
+}
+
+form input[type="text"] , form input[type="email"]{
+    width: 100%;
+    height: 40px;
+    margin-top: 10px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    padding: 5px;
+    display: block;
+}
+
+form button{
+    width: 90%;
+    height: 40px;
+    border: 1px solid yellowgreen;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: transparent;
+    margin: auto;
+    font-weight: bold;
+    cursor: pointer;
+    color: yellowgreen;
+    transition-duration: .4s;
+}
+
+
+form button:hover{
+    border: 1px solid yellowgreen;
+    background-color: yellowgreen;
+    color: #fff;
+}
+
+form button * {
+    display: inline-block;
+}
+
+form textarea{
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    padding: 5px;
+    height: 100px;
+    display: block;
+}
+@media only screen and (max-width: 990px){
+    .bg-light{
+        background: #fff !important;
+        transition-duration: 0.5s;
+        color: #000 !important;
+        box-shadow: 1px 1px 10px 1px #aaa;
+    }
+    
+    .navbar-brand{
+        color: #000 !important
+    }
+
+    .nav-link {
+        color: #000 !important;
+    }
+}
+
+footer{
+    background-color: #eee;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    top: 400px;
+}
+
+footer img {
+    width: 150px;
+    height: 150px;
+}
+
+footer a{
+    padding: 10px;
+    font-size: 20px;
+}
