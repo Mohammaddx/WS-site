@@ -176,7 +176,7 @@ font-weight: bold;
     max-height: 600px;
     display: block;
     margin: auto;
-    border: 2px solid dodgerblue;
+    border: 2px solid #aaa;
     padding: 10px;}
 
     .uk-position-relative li{
@@ -208,7 +208,7 @@ font-weight: bold;
     text-align: center;
     box-shadow: 1px 1px 10px 1px rgba(0,0,0,0.5);
     padding: 20px;
-    width: 50%;
+    width: 80%;
     background-color: rgba(0,0,0,0.5)
 }
 .form h1{
@@ -216,7 +216,7 @@ font-weight: bold;
 }
 
 form{
-    width: 90%;
+    width: 70%;
     margin: auto;
 }
 
